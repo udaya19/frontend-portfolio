@@ -12,10 +12,10 @@ const Header = () => {
         <li className="hover:border-b-2 transition">Contact</li>
       </nav>
       <div className="body-name-social flex-col mt-36">
-        <h1 className="text-white font-bold text-4xl text-center">
+        <h1 className="text-white font-bold text-5xl text-center">
           Gonuguntla Udaya Kiran
         </h1>
-        <div className="social-icons flex justify-center gap-5 mt-1 ">
+        <div className="social-icons flex justify-center gap-8 mt-12 ">
           <div>
             <a href="https://www.linkedin.com/in/gonuguntla-udaya-kiran-469751202/">
               <AiFillLinkedin

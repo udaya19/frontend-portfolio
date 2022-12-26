@@ -5,7 +5,9 @@ const Experience = () => {
   return (
     <div>
       <div className="educationTitle flex justify-center gap-2 mt-8">
-        <span class="material-symbols-outlined text-primary">work</span>
+        <span class="material-symbols-outlined text-primary font-semibold mt-1">
+          work
+        </span>
         <h1 className="text-primary font-bold text-4xl">Experience</h1>
       </div>
       <div className="educationName mt-8 flex justify-center">
