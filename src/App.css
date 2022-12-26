@@ -10,3 +10,17 @@
 a{
     text-decoration: none;
 }
+
+/*About*/
+.about-image{
+    margin-top: -15vh;
+    margin-left: 45%;
+}
+
+.about-image img{
+    width: 12rem;
+    height: 13rem;
+    border-radius: 50%;
+    border:5px solid rgb(192, 192, 192,0.5) ;
+    box-shadow: 0 0 4px 4px white;
+}
