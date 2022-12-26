@@ -11,6 +11,11 @@ module.exports = {
       },
       colors: {
         mediumGray: "rgb(128,128,128)",
+        primary: "rgb(40, 87, 164)",
+        secondary: "rgb(236, 77, 28)",
+      },
+      fontSize: {
+        icon: "20px",
       },
     },
   },

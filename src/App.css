@@ -24,3 +24,12 @@ a{
     border:5px solid rgb(192, 192, 192,0.5) ;
     box-shadow: 0 0 4px 4px white;
 }
+
+.educationTitle span{
+    font-size: 35px;
+}
+
+.educationName img{
+    width: 150px;
+    height: 150px;
+}
