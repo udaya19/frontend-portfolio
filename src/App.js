@@ -5,6 +5,7 @@ import Header from "./components/UserComponents/Header";
 import About from "./components/UserComponents/About";
 import Education from "./components/UserComponents/Education";
 import Experience from "./components/UserComponents/Experience";
+import Projects from "./components/UserComponents/Projects";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Education />
       <Experience />
+      <Projects />
       <Routes>
         {/* <Route path="/" element={<Header />} /> */}
         {/* <Route path="/" element={<About />} />
