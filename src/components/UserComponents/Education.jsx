@@ -6,7 +6,7 @@ import bml from "../../images/bml-logo.jpeg";
 const Education = () => {
   return (
     <div>
-      <div className="educationTitle flex justify-center gap-2">
+      <div className="educationTitle flex justify-center gap-2 mt-8">
         <span className="material-symbols-outlined text-primary mt-1 font-semibold">
           school
         </span>
