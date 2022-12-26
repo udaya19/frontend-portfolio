@@ -1,0 +1,12 @@
+.body-header{
+    background-image: url('./images/macbook_mouse.jpg');
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+}
