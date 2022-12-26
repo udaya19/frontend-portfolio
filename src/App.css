@@ -37,6 +37,15 @@ a{
     height: 150px;
 }
 
+.educationName:nth-child(odd){
+    justify-content: end;
+    margin-right: 10rem;
+}
+.educationName:nth-child(even){
+    justify-content: start;
+    margin-left: 10rem;
+}
+
 #portfolio-container {
     display: flex;
     flex-wrap: wrap;

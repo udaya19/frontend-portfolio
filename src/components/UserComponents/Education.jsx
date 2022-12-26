@@ -12,7 +12,7 @@ const Education = () => {
         </span>
         <h1 className="text-primary font-bold text-4xl">Education</h1>
       </div>
-      <div className="educationName mt-8 flex justify-center">
+      <div className="educationName mt-8 flex ">
         <img src={nsm} alt="NSM" className="rounded-full mr-4 " />
         <div className="flex flex-col justify-center">
           <h1 className="text-primary text-xl font-bold">NSM Public School</h1>
@@ -23,7 +23,7 @@ const Education = () => {
           </h4>
         </div>
       </div>
-      <div className="educationName mt-8 flex justify-center">
+      <div className="educationName mt-8 flex ">
         <img src={hvs} alt="NSM" className="rounded-full mr-4 " />
         <div className="flex flex-col justify-center">
           <h1 className="text-primary text-xl font-bold">
@@ -36,7 +36,7 @@ const Education = () => {
           </h4>
         </div>
       </div>
-      <div className="educationName mt-8 flex justify-center">
+      <div className="educationName mt-8 flex">
         <img src={bml} alt="NSM" className="rounded-full mr-4 " />
         <div className="flex flex-col justify-center">
           <h1 className="text-primary text-xl font-bold">

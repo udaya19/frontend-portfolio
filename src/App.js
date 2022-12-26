@@ -6,6 +6,7 @@ import About from "./components/UserComponents/About";
 import Education from "./components/UserComponents/Education";
 import Experience from "./components/UserComponents/Experience";
 import Projects from "./components/UserComponents/Projects";
+import Contact from "./components/UserComponents/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Education />
       <Experience />
       <Projects />
+      <Contact />
       <Routes>
         {/* <Route path="/" element={<Header />} /> */}
         {/* <Route path="/" element={<About />} />
