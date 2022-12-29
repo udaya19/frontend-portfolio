@@ -1,15 +1,19 @@
 import React from "react";
 import { AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="body-header">
       <nav className="flex list-none gap-5 p-2 pt-3 justify-center cursor-pointer text-white text-xl">
-        <li className="hover:border-b-2 transition">Home</li>
-        <li className="hover:border-b-2 transition">About</li>
-        <li className="hover:border-b-2 transition">Education</li>
-        <li className="hover:border-b-2 transition">Experience</li>
-        <li className="hover:border-b-2 transition">Projects</li>
-        <li className="hover:border-b-2 transition">Contact</li>
+        <li className="hover:pl-1 transition">Home</li>
+        <li className="hover:pl-1 transition">About</li>
+        <li className="hover:pl-1 transition">Education</li>
+        <li className="hover:pl-1 transition">Experience</li>
+        <li className="hover:pl-1 transition">Projects</li>
+        <li className="hover:pl-1 transition">Contact</li>
+        <Link to="/login">
+          <li className=" hover:pl-1">Login</li>
+        </Link>
       </nav>
       <div className="body-name-social flex-col mt-36">
         <h1 className="text-white font-bold text-5xl text-center">
