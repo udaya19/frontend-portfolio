@@ -1,11 +1,21 @@
-import React from "react";
-import me from "../../images/me.jpeg";
-
+import React, { useEffect, useState } from "react";
+import { getUserImageApi } from "../../api/userApi";
 const About = () => {
+  const [imageUrl, setImageUrl] = useState();
+  useEffect(() => {
+    getImage();
+  }, []);
+  const getImage = async () => {
+    const { success, userImg } = await (await getUserImageApi()).data;
+    if (success) {
+      const imgUrl = userImg[0].avatar.url;
+      setImageUrl(imgUrl);
+    }
+  };
   return (
     <div className="p-7 ">
       <div className="about-image">
-        <img src={me} alt="" className="" />
+        <img src={imageUrl} alt="" className="" />
       </div>
       <div className="aboutMe mt-7">
         <p className="w-2/3 text-mediumGray font-semibold text-lg ml-60">
