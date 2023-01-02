@@ -1,10 +1,12 @@
 import "./App.css";
+import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+
 import Login from "./components/UserComponents/Login";
 import Home from "./components/UserComponents/Home";
 import { getLoggedInUserApi } from "./api/userApi";
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+
 import {
   loadUserFailed,
   loadUserRequest,
@@ -13,6 +15,7 @@ import {
 
 function App() {
   const dispatch = useDispatch();
+  const { loading, isAuthenticated } = useSelector((state) => state.user);
   useEffect(() => {
     const getLoggedInUser = async () => {
       dispatch(loadUserRequest());
@@ -27,12 +30,22 @@ function App() {
   }, [dispatch]);
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-      </Routes>
+      {loading ? (
+        <p>Loading</p>
+      ) : (
+        <>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+          <Routes>
+            {!isAuthenticated ? (
+              <Route path="/" element={<Login />} />
+            ) : (
+              <Route path="/login" element={<Home />} />
+            )}
+          </Routes>
+        </>
+      )}
     </div>
   );
 }
