@@ -39,9 +39,9 @@ function App() {
           </Routes>
           <Routes>
             {!isAuthenticated ? (
-              <Route path="/" element={<Login />} />
+              <Route path="/login" element={<Login />} />
             ) : (
-              <Route path="/login" element={<Home />} />
+              <Route path="/" element={<Home />} />
             )}
           </Routes>
         </>

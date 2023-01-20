@@ -15,7 +15,7 @@ const Contact = () => {
         </span>
         <h1 className="text-white font-bold text-4xl">Contact</h1>
       </div>
-      <div className="contact-body flex gap-4 p-16 ">
+      <div className="contact-body flex gap-14 p-16 ">
         <div className="contact-container w-1/2">
           <p className="text-white text-2xl p-3">
             If you are new to Computer Science Engineering and looking for
