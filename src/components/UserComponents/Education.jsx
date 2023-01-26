@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+import Title from "../Title";
 import { getEducationApi } from "../../api/educationApi";
 
 const Education = () => {
@@ -19,12 +20,7 @@ const Education = () => {
   }, []);
   return (
     <div>
-      <div className="educationTitle flex justify-center gap-2 mt-8">
-        <span className="material-symbols-outlined text-primary mt-1 font-semibold">
-          school
-        </span>
-        <h1 className="text-primary font-bold text-4xl">Education</h1>
-      </div>
+      <Title title="Education" iconName="school" />
       {education.map((ed, index) => (
         <div className="educationName mt-8 flex " key={index}>
           <img src={ed.logo.url} alt="NSM" className="rounded-full mr-4 " />

@@ -1,15 +1,11 @@
 import React from "react";
 import project from "../../images/projects.png";
+import Title from "../Title";
 
 const Projects = () => {
   return (
     <>
-      <div className="educationTitle flex justify-center gap-2 mt-8">
-        <span class="material-symbols-outlined text-primary font-semibold mt-1">
-          work
-        </span>
-        <h1 className="text-primary font-bold text-4xl">Projects</h1>
-      </div>
+      <Title iconName="work" title="Projects" />
       <div className="project-container flex flex-wrap gap-10">
         <div className="flex w-1/2">
           <img src={project} alt="" width="300px" height="300px" />

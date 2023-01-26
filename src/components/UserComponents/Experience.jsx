@@ -1,15 +1,11 @@
 import React from "react";
 import spotflock from "../../images/spotflock-logo.png";
+import Title from "../Title";
 
 const Experience = () => {
   return (
     <div>
-      <div className="educationTitle flex justify-center gap-2 mt-8">
-        <span className="material-symbols-outlined text-primary font-semibold mt-1">
-          work_history
-        </span>
-        <h1 className="text-primary font-bold text-4xl">Experience</h1>
-      </div>
+      <Title title="Experience" iconName="work_history" />
       <div className="educationName mt-8 flex justify-center">
         <img src={spotflock} alt="NSM" className="rounded-full mr-4 " />
         <div className="flex flex-col justify-center">
