@@ -26,7 +26,10 @@ const About = () => {
       </div>
       <div className="aboutMe mt-7">
         {about.map((a) => (
-          <p className="w-2/3 text-mediumGray font-semibold text-lg ml-60">
+          <p
+            key={a._id}
+            className="w-2/3 text-mediumGray font-semibold text-lg ml-60"
+          >
             {a.content}
           </p>
         ))}
