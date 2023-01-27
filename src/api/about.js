@@ -1,3 +1,3 @@
-import apiInstance from ".";
+import { getApi } from "./apiResposne";
 
-export const getAboutApi = () => apiInstance.get("/about");
+export const getAboutApi = () => getApi("/about");
