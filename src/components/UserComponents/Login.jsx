@@ -1,19 +1,21 @@
 import React, { useState } from "react";
 import { AiOutlineLock, AiOutlineMail } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
+
 import { loginUserApi } from "../../api/userApi";
+
 const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const navigate = useNavigate();
   const loginHandler = async (e) => {
-    console.log("Button clicked");
     e.preventDefault();
     const response = await (await loginUserApi(email, password)).data;
     if (response.success) {
       alert(response.message);
       localStorage.setItem("token", response.token);
       navigate("/");
+      window.location.reload(true);
     } else {
       alert(response.error);
     }
