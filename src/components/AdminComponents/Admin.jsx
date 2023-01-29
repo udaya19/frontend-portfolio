@@ -1,7 +1,12 @@
 import React from "react";
+import AboutAdmin from "./AboutAdmin";
 
 const Admin = () => {
-  return <div>Admin</div>;
+  return (
+    <div>
+      <AboutAdmin />
+    </div>
+  );
 };
 
 export default Admin;

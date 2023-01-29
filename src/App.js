@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 
 import Login from "./components/UserComponents/Login";
 import Home from "./components/UserComponents/Home";
+import Admin from "./components/AdminComponents/Admin";
+
 import { getLoggedInUserApi } from "./api/userApi";
 
 import {
@@ -36,6 +38,7 @@ function App() {
         <>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
           <Routes>
             {!isAuthenticated ? (
