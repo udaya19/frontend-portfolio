@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
+
 import { getUserImageApi } from "../../api/userApi";
-import { getAboutApi } from "../../api/about";
+import { getAbout } from "../apiCall";
 const About = () => {
   const [imageUrl, setImageUrl] = useState();
   const [about, setAbout] = useState([]);
   useEffect(() => {
     getImage();
-    getAbout();
+    fetchAbout();
   }, []);
   const getImage = async () => {
     const { success, userImg } = await (await getUserImageApi()).data;
@@ -15,9 +16,13 @@ const About = () => {
       setImageUrl(imgUrl);
     }
   };
-  const getAbout = async () => {
-    const { results } = await (await getAboutApi()).data;
-    setAbout(results);
+  const fetchAbout = async () => {
+    const { success, error, results } = await getAbout();
+    if (success) {
+      setAbout(results);
+    } else {
+      alert(error);
+    }
   };
   return (
     <div className="p-7 ">
