@@ -1,6 +1,5 @@
-import apiInstance from ".";
-import { getApi } from "./apiResposne";
+import { addApi, getApi } from "./apiResposne";
 
 export const getAboutApi = () => getApi("/about");
 
-export const addAboutApi = (body) => apiInstance.post("/about/add", body);
+export const addAboutApi = (body) => addApi("/about/add", body);
